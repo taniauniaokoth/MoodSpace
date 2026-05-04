@@ -22,6 +22,20 @@
 
     <!-- the main section  -->
     <main>
+      <section class="tips">
+        <h2>Quick Tips</h2>
+        <ul>
+          <li>Be honest — this space is for you only.</li>
+          <li>Write even one word if you're unsure.</li>
+          <li>Consistency matters more than perfection.</li>
+        </ul>
+      </section>
+
+      <section class="mood-preview">
+        <h2>Selected Mood</h2>
+        <p id="previewText">Nothing selected yet</p>
+      </section>
+
       <section class="form-section">
         <!-- user's form  -->
         <form id="moodForm">
@@ -36,10 +50,7 @@
           </select>
 
           <label>note</label>
-          <textarea
-            id="note"
-            placeholder="Pour your heart"
-          ></textarea>
+          <textarea id="note" placeholder="Pour your heart"></textarea>
 
           <button onclick="saveMood()">Save Mood</button>
         </form>
