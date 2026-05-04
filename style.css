@@ -59,12 +59,12 @@ section {
   margin: 40px auto;
   padding: 30px;
   max-width: 900px;
-  border-radius: 16px;
+  border-radius: 20px;
 
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
 
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
 /* HERO */
@@ -176,4 +176,10 @@ section {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
