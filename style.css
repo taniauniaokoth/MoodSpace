@@ -1,0 +1,156 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #f8f7fc, #e6e4ff);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+header p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* NAV */
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #6c63ff;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* SECTIONS */
+section {
+  margin: 40px auto;
+  padding: 30px;
+  max-width: 900px;
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #6c63ff;
+  color: white;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  transform: scale(1.05);
+}
+
+/* CARDS */
+.card, .stat-card {
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card:hover, .stat-card:hover {
+  transform: translateY(-5px);
+}
+
+/* FEATURES GRID FEEL */
+.features, .stats {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* QUOTE */
+.quote {
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;
+}
+
+/* FORM */
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select, textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #6c63ff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* RESULT BOX */
+#resultList {
+  margin-top: 15px;
+}
+
+#resultList div {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 13px;
+  opacity: 0.7;
+}
