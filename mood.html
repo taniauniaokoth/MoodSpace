@@ -6,7 +6,12 @@
     <title>Mood|MoodSpace</title>
   </head>
   <body>
+    <!-- the header -->
     <header>
+      <h1>Log Your Mood</h1>
+      <p>Don't be shy to be honest.</p>
+      <br />
+      <p>This is your space!</p>
       <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -14,25 +19,39 @@
         <a href="result.html">Results</a>
       </nav>
     </header>
+
+    <!-- the main section  -->
     <main>
-      <h1>Log Your Mood</h1>
+      <section class="form-section">
+        <!-- user's form  -->
+        <form id="moodForm">
+          <label>How are you feeling today?</label>
+          <select id="mood">
+            <option value="">Select Mood</option>
+            <option value="Happy">Happy</option>
+            <option value="Sad">Sad</option>
+            <option value="Angry">Angry</option>
+            <option value="Excited">Excited</option>
+            <option value="Tired">Tired</option>
+          </select>
 
-      <form id="moodForm">
-        <select id="mood">
-          <option value="">Select Mood</option>
-          <option value="Happy">Happy</option>
-          <option value="Sad">Sad</option>
-          <option value="Angry">Angry</option>
-          <option value="Excited">Excited</option>
-          <option value="Tired">Tired</option>
-        </select>
+          <label>note</label>
+          <textarea
+            id="note"
+            placeholder="What made you feel this way?"
+          ></textarea>
 
-        <input type="text" id="note" placeholder="Write something..." />
+          <button type="submit">Save Mood</button>
+        </form>
 
-        <button type="submit">Save Mood</button>
-      </form>
+        <p id="message"></p>
+      </section>
 
-      <p id="message"></p>
+      <footer>
+        <p>Your feelings matter 🤍</p>
+      </footer>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
