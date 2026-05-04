@@ -1,15 +1,15 @@
- Mood Space
-PROJECT DESCRIPTION
+ Mood Space<br>
+PROJECT DESCRIPTION<br>
 
 Mood Space is a web application designed to help users track, express, and understand their emotions in a simple and interactive way. Many people experience mood changes but do not have an easy way to reflect on or manage them.
 
-This project provides a digital space where users can log their moods, add short notes about how they feel, and view their emotional patterns over time. By combining a clean user interface with JavaScript functionality, the application transforms personal input into meaningful feedback.
+This project provides a digital space where users can log their moods, add short notes about how they feel, and view their emotional patterns over time. By combining a clean user interface with JavaScript functionality, the application transforms personal input into meaningful feedback. <br><br>
 
- PROBLEM STATEMENT
+ PROBLEM STATEMENT<br>
 
-Many individuals struggle to track their emotions consistently or reflect on their mental state over time. Without a structured system, it becomes difficult to identify patterns, triggers, or improvements in mood.
+Many individuals struggle to track their emotions consistently or reflect on their mental state over time. Without a structured system, it becomes difficult to identify patterns, triggers, or improvements in mood.<br><br>
 
- HOW IT SOLVES THE PROBLEM
+ HOW IT SOLVES THE PROBLEM <br>
 
 Mood Space allows users to:
 
@@ -18,22 +18,22 @@ Add optional notes describing their feelings
 Store this data using localStorage
 Retrieve and display past moods across different pages
 
-This helps users become more aware of their emotional patterns and encourages self-reflection.
+This helps users become more aware of their emotional patterns and encourages self-reflection.<br><br>
 
-HOW IT WORKS
+HOW IT WORKS<br>
 The user selects a mood and optionally writes a note
 JavaScript captures this input using DOM manipulation
 The data is stored in localStorage for persistence
 Other pages retrieve and display the stored mood entries
-The interface updates dynamically based on user interaction
+The interface updates dynamically based on user interaction<br><br>
 
-AUTHOR INFORMATION:
+AUTHOR INFORMATION:<br>
 Name: Tania Unia Okoth
 Email: taniauniaokoth@gmail.com
 
-GitHub:https://github.com/taniauniaokoth/MoodSpace
+GitHub:https://github.com/taniauniaokoth/MoodSpace <br><br>
 
-SETUP INTRUCTIONS
+SETUP INTRUCTIONS<br>
 Prerequisites
 A web browser (Chrome, Edge, Safari, etc.)
 Installation
@@ -42,10 +42,10 @@ git clone <https://github.com/taniauniaokoth/MoodSpace>
 Open the folder:
 cd mood-space
 Run the project:
-Open index.html in your browser
+Open index.html in your browser <br><br>
 
 
-BDD (BEHAVIOUR-DRVEN DEVELOPMENT)
+BDD (BEHAVIOUR-DRVEN DEVELOPMENT)<br>
 Feature: User can log moods
 
 Scenario 1: User submits a mood successfully
@@ -64,15 +64,15 @@ Scenario 3: Data persists across pages
 
 Given the user has submitted moods
 When they navigate to another page
-Then the saved moods are displayed
+Then the saved moods are displayed<br><br>
 
-TECHNOLOGIES USED
+TECHNOLOGIES USED<br>
 HTML5 → Structure
 CSS3 → Styling and layout (Flexbox/Grid)
 JavaScript → Logic and interactivity
-localStorage → Data persistence
+localStorage → Data persistence<br><br>
 
-PROJECT STRUCTURE
+PROJECT STRUCTURE<br>
 mood-space/
 │
 ├── index.html        # Home / mood input page  
@@ -80,26 +80,26 @@ mood-space/
 ├── insights.html     # Shows patterns or summary  
 ├── style.css         # Styling  
 ├── script.js         # Logic and DOM manipulation  
-└── README.md         # Documentation  
+└── README.md         # Documentation  <br><br>
 
-KEY FEATURES
+KEY FEATURES<br>
 Multi-page navigation
 Form input with validation
 Dynamic DOM updates
 Data storage using localStorage
 Clean and responsive design
 
-CONTACT INFORMATION
+CONTACT INFORMATION<br>
 
 For feedback or questions:
 
 Email: taniauniaokoth@gmail.com
-GitHub: https://github.com/taniauniaokoth/MoodSpace
+GitHub: https://github.com/taniauniaokoth/MoodSpace <br><br>
 
-LICENSE
+LICENSE<br>
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. <br><br>
 
-ACKNOWLEDGEMENTS
+ACKNOWLEDGEMENTS<br>
 Inspiration from real-life emotional tracking needs
 Web development concepts learned in Foundations of Software Engineering
