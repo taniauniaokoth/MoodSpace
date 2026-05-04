@@ -87,18 +87,26 @@ section {
 }
 
 /* CARDS */
-.card,
-.stat-card {
-  margin: 15px 0;
+.card, .stat-card {
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 15px;
   background: white;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+
+  border-left: 6px solid #6c63ff;
 }
 
-.card:hover,
-.stat-card:hover {
-  transform: translateY(-5px);
+.card:nth-child(2) {
+  border-left: 6px solid #ff6b6b;
+}
+
+.card:nth-child(3) {
+  border-left: 6px solid #00c9a7;
+}
+
+.card:hover, .stat-card:hover {
+  transform: scale(1.03) rotate(-1deg);
 }
 
 /* FEATURES GRID FEEL */
@@ -142,16 +150,20 @@ textarea {
 }
 
 button {
-  padding: 10px;
+  padding: 12px;
+  border-radius: 10px;
   border: none;
-  border-radius: 8px;
-  background: #6c63ff;
+
+  background: linear-gradient(135deg, #ff6b6b, #6c63ff);
   color: white;
+  font-weight: bold;
+
   cursor: pointer;
 }
 
 button:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
 
 /* RESULT BOX */
