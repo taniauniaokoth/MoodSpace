@@ -14,14 +14,25 @@
         <a href="result.html">Results</a>
       </nav>
     </header>
-
     <main>
-      <h1>Mood Space</h1>
-      <p>Your personal mood tracking web app.</p>
+      <h1>Log Your Mood</h1>
 
-      <a href="mood.html">
-        <button>Start Tracking</button>
-      </a>
+      <form id="moodForm">
+        <select id="mood">
+          <option value="">Select Mood</option>
+          <option value="Happy">Happy</option>
+          <option value="Sad">Sad</option>
+          <option value="Angry">Angry</option>
+          <option value="Excited">Excited</option>
+          <option value="Tired">Tired</option>
+        </select>
+
+        <input type="text" id="note" placeholder="Write something..." />
+
+        <button type="submit">Save Mood</button>
+      </form>
+
+      <p id="message"></p>
     </main>
   </body>
 </html>
