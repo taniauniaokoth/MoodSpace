@@ -87,12 +87,13 @@ section {
 }
 
 /* CARDS */
-.card, .stat-card {
+.card,
+.stat-card {
   padding: 20px;
   border-radius: 15px;
   background: white;
 
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 
   border-left: 6px solid #6c63ff;
 }
@@ -105,7 +106,8 @@ section {
   border-left: 6px solid #00c9a7;
 }
 
-.card:hover, .stat-card:hover {
+.card:hover,
+.stat-card:hover {
   transform: scale(1.03) rotate(-1deg);
 }
 
@@ -149,6 +151,22 @@ textarea {
   border: 1px solid #ccc;
 }
 
+.happy {
+  background: #ffe066;
+}
+.sad {
+  background: #74c0fc;
+}
+.angry {
+  background: #ff6b6b;
+}
+.excited {
+  background: #ff9f1c;
+}
+.tired {
+  background: #adb5bd;
+}
+
 button {
   padding: 12px;
   border-radius: 10px;
@@ -163,7 +181,7 @@ button {
 
 button:hover {
   transform: scale(1.08);
-  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* RESULT BOX */
