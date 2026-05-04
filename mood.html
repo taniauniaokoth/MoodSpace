@@ -27,7 +27,7 @@
         <form id="moodForm">
           <label>How are you feeling today?</label>
           <select id="mood">
-            <option value="">Select Mood</option>
+            <option value="">Select your mood</option>
             <option value="Happy">Happy</option>
             <option value="Sad">Sad</option>
             <option value="Angry">Angry</option>
@@ -38,10 +38,10 @@
           <label>note</label>
           <textarea
             id="note"
-            placeholder="What made you feel this way?"
+            placeholder="Pour your heart"
           ></textarea>
 
-          <button type="submit">Save Mood</button>
+          <button onclick="saveMood()">Save Mood</button>
         </form>
 
         <p id="message"></p>
