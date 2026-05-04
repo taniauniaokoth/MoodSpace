@@ -7,16 +7,10 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   color: #111;
 
-  background: linear-gradient(
-    135deg,
-    #ff9a9e,
-    #fad0c4,
-    #fbc2eb,
-    #a18cd1
-  );
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
 
   background-size: 300% 300%;
   animation: gradientMove 10s ease infinite;
@@ -64,7 +58,7 @@ section {
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(12px);
 
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* HERO */
@@ -93,15 +87,17 @@ section {
 }
 
 /* CARDS */
-.card, .stat-card {
+.card,
+.stat-card {
   margin: 15px 0;
   padding: 20px;
   border-radius: 12px;
   background: white;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.card:hover, .stat-card:hover {
+.card:hover,
+.stat-card:hover {
   transform: translateY(-5px);
 }
 
@@ -111,7 +107,12 @@ section {
   background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
 }
 
-.features, .stats {
+.stats {
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+}
+
+.features,
+.stats {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -119,6 +120,7 @@ section {
 
 /* QUOTE */
 .quote {
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
   text-align: center;
   font-style: italic;
   font-size: 18px;
@@ -131,7 +133,9 @@ section {
   gap: 10px;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   padding: 10px;
   border-radius: 8px;
   border: 1px solid #ccc;
@@ -185,7 +189,13 @@ section {
 }
 
 @keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
