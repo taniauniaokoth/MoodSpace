@@ -94,6 +94,25 @@ section {
   color: #ff4ecd;
 }
 
+.floating-words span {
+  position: absolute;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2rem;
+  opacity: 0.1;
+  animation: floatWords 10s infinite ease-in-out;
+}
+
+.floating-words span:nth-child(1) { top: 20%; left: 10%; }
+.floating-words span:nth-child(2) { top: 50%; left: 70%; }
+.floating-words span:nth-child(3) { top: 80%; left: 30%; }
+.floating-words span:nth-child(4) { top: 30%; left: 50%; }
+
+@keyframes floatWords {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
 
 /* HERO */
 .hero {
