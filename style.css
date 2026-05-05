@@ -84,6 +84,16 @@ section {
 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
+ 
+/* home page  */
+/* QUOTE */
+.quote p {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.5rem;
+  transform: rotate(-2deg);
+  color: #ff4ecd;
+}
+
 
 /* HERO */
 .hero {
