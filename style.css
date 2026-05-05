@@ -220,6 +220,14 @@ textarea {
   background: #adb5bd;
 }
 
+:root {
+  --happy: #ffe066;
+  --sad: #4dabf7;
+  --angry: #ff6b6b;
+  --calm: #a0e7e5;
+  --dark: #111;
+}
+
 button {
   padding: 12px;
   border-radius: 10px;
