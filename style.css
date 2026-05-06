@@ -541,7 +541,7 @@ h2 {
 
 /* CURSOR GLOW */
 body {
-  cursor: cell;
+  cursor: none;
 }
 
 .cursor {
