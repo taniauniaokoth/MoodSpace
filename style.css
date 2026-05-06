@@ -26,7 +26,7 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background: var(--bg);
   color: var(--text-main);
   line-height: 1.6;
@@ -46,12 +46,6 @@ section {
   margin: 60px 0;
 }
 
-p{
-  line-height: 1.6;
-  margin-bottom: 20px;
-  color: #444;
-}
-
 /* =========================
    HEADER + NAV
    ========================= */
@@ -66,6 +60,8 @@ header {
 header h1 {
   font-size: 40px;
   letter-spacing: 1px;
+  text-decoration: none;
+  color: inherit;
 }
 
 nav a {
@@ -101,6 +97,12 @@ nav a:hover {
   margin: 10px auto;
   color: var(--text-secondary);
 }
+
+/* ==========================
+ABOUT PAGE
+============================= */
+
+
 
 /* =========================
    BUTTON
@@ -145,19 +147,37 @@ button:hover {
   border-radius: var(--radius);
   padding: 24px;
 
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 /* =========================
    TEXT
    ========================= */
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 600;
 }
 
 p {
-  color: var(--text-secondary);
+  /* color: var(--text-secondary); */
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+ul {
+  padding-left: 1.5rem;
+  margin-left: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+
+li {
+  margin-top: 10px;
 }
 
 /* =========================
@@ -204,11 +224,21 @@ textarea:focus {
   background: var(--surface);
 }
 
-.mood-happy { border-left: 5px solid var(--happy); }
-.mood-sad { border-left: 5px solid var(--sad); }
-.mood-angry { border-left: 5px solid var(--angry); }
-.mood-excited { border-left: 5px solid var(--excited); }
-.mood-tired { border-left: 5px solid var(--tired); }
+.mood-happy {
+  border-left: 5px solid var(--happy);
+}
+.mood-sad {
+  border-left: 5px solid var(--sad);
+}
+.mood-angry {
+  border-left: 5px solid var(--angry);
+}
+.mood-excited {
+  border-left: 5px solid var(--excited);
+}
+.mood-tired {
+  border-left: 5px solid var(--tired);
+}
 
 /* =========================
    SECTIONS
