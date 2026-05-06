@@ -43,7 +43,7 @@ main {
 }
 
 section {
-  margin: 60px 0;
+  margin: 100px 0;
 }
 
 /* =========================
@@ -98,6 +98,10 @@ nav a:hover {
   max-width: 600px;
   margin: 10px auto;
   color: var(--text-secondary);
+}
+
+.hero h2 span {
+  color: var(--accent);
 }
 
 /* ==========================
