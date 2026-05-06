@@ -46,6 +46,12 @@ section {
   margin: 60px 0;
 }
 
+p{
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #444;
+}
+
 /* =========================
    HEADER + NAV
    ========================= */
