@@ -57,11 +57,12 @@ header {
   padding: 25px 40px;
 }
 
-header h1 {
+header h1 a {
   font-size: 40px;
   letter-spacing: 1px;
   text-decoration: none;
   color: inherit;
+  transition: 0.3s ease;
 }
 
 nav a {
@@ -102,7 +103,22 @@ nav a:hover {
 ABOUT PAGE
 ============================= */
 
+/* Style the titles (<li> or <strong> tags) */
+.features-list li {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 20px; /* Adds space between groups */
+  color: #333;
+  list-style: none; /* Ensures no bullets */
+}
 
+/* Style the description (<p> tags) */
+.features-list p {
+  color: #666; /* Lighter gray makes it look cleaner */
+  font-size: 0.95rem;
+  margin-top: 5px;
+  line-height: 1.6;
+}
 
 /* =========================
    BUTTON
