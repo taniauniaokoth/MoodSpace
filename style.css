@@ -1,152 +1,88 @@
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  transition: all 0.3s ease;
+/* =========================
+   MOOD SPACE DESIGN SYSTEM
+   ========================= */
+
+:root {
+  --bg: #f7f6f3;
+  --surface: #ffffff;
+
+  --text-main: #1a1a1a;
+  --text-secondary: #6b6b6b;
+
+  --accent: #6b6bff;
+
+  --happy: #e6c97a;
+  --sad: #7a9cc6;
+  --angry: #c46b6b;
+  --excited: #b48ead;
+  --tired: #9e9e9e;
+
+  --radius: 16px;
 }
 
-/* background scribble */
-.scribble-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-
-  background-image:
-    radial-gradient(
-      circle at 20% 30%,
-      rgba(255, 0, 150, 0.2) 2px,
-      transparent 2px
-    ),
-    radial-gradient(
-      circle at 70% 60%,
-      rgba(0, 200, 255, 0.2) 2px,
-      transparent 2px
-    ),
-    radial-gradient(
-      circle at 40% 80%,
-      rgba(255, 200, 0, 0.2) 2px,
-      transparent 2px
-    );
-
-  background-size: 200px 200px;
-  animation: floatBg 20s linear infinite;
-  z-index: 0;
-}
-
-@keyframes floatBg {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-200px);
-  }
-}
+/* =========================
+   BASE
+   ========================= */
 
 body {
-  font-family: "Inter", sans-serif;
-  background-color: #f8f6f3;
-  color: #1a1a1a;
   margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text-main);
+  line-height: 1.6;
 }
 
-/* HEADER */
+/* =========================
+   LAYOUT
+   ========================= */
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin: 60px 0;
+}
+
+/* =========================
+   HEADER + NAV
+   ========================= */
+
 header {
-  padding: 30px 20px;
-  text-align: center;
-  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
 }
 
 header h1 {
-  font-size: 32px;
-  letter-spacing: 2px;
-}
-
-header p {
-  font-size: 14px;
-  opacity: 0.8;
-}
-
-/* NAV */
-nav {
-  margin-top: 15px;
+  font-size: 40px;
+  letter-spacing: 1px;
 }
 
 nav a {
-  margin: 0 15px;
+  margin-left: 25px;
   text-decoration: none;
-  color: #555;
+  color: var(--text-secondary);
+  font-size: 14px;
   font-weight: 500;
+  transition: 0.2s;
 }
 
 nav a:hover {
-  text-decoration: underline;
-  color: #000;
+  color: var(--text-main);
 }
 
-/* SECTIONS */
-section {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 30px;
-  border-radius: 16px;
+/* =========================
+   HERO
+   ========================= */
 
-  background: white;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
-}
-
-/* home page  */
-/* QUOTE */
-.quote p {
-  font-family: "Permanent Marker", cursive;
-  font-size: 1.5rem;
-  transform: rotate(-2deg);
-  color: #ff4ecd;
-}
-
-.floating-words span {
-  position: absolute;
-  font-family: "Permanent Marker", cursive;
-  font-size: 2rem;
-  opacity: 0.1;
-  animation: floatWords 10s infinite ease-in-out;
-}
-
-.floating-words span:nth-child(1) {
-  top: 20%;
-  left: 10%;
-}
-.floating-words span:nth-child(2) {
-  top: 50%;
-  left: 70%;
-}
-.floating-words span:nth-child(3) {
-  top: 80%;
-  left: 30%;
-}
-.floating-words span:nth-child(4) {
-  top: 30%;
-  left: 50%;
-}
-
-@keyframes floatWords {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-/* HERO */
 .hero {
+  margin: 0;
   text-align: center;
+  padding: 80px 20px;
 }
 
 .hero h2 {
@@ -155,59 +91,38 @@ section {
 }
 
 .hero p {
-  color: #666;
   max-width: 600px;
   margin: 10px auto;
+  color: var(--text-secondary);
 }
 
-.hero button {
-  margin-top: 15px;
-  padding: 10px 20px;
+/* =========================
+   BUTTON
+   ========================= */
+
+button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  border-radius: 999px;
   border: none;
-  border-radius: 8px;
-  background: #6c63ff;
+
+  background: var(--text-main);
   color: white;
+
+  font-size: 14px;
   cursor: pointer;
+
+  transition: all 0.25s ease;
 }
 
-.hero button:hover {
-  transform: scale(1.05);
+button:hover {
+  transform: translateY(-2px);
+  background: #333;
 }
 
-/* CARDS */
-.card,
-.stat-card {
-  padding: 20px;
-  border-radius: 15px;
-  background: white;
-
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-
-  border-left: 6px solid #6c63ff;
-}
-
-.card:nth-child(odd) {
-  transform: rotate(-1deg);
-}
-
-.card:nth-child(even) {
-  transform: rotate(1deg);
-}
-
-.card:nth-child(2) {
-  border-left: 6px solid #ff6b6b;
-}
-
-.card:nth-child(3) {
-  border-left: 6px solid #00c9a7;
-}
-
-.card:hover,
-.stat-card:hover {
-  transform: scale(1.03) rotate(-1deg);
-}
-
-/* FEATURES GRID FEEL */
+/* =========================
+   CARDS + FEATURES
+   ========================= */
 
 .features {
   display: grid;
@@ -215,119 +130,143 @@ section {
   gap: 20px;
 }
 
-.card {
-  padding: 20px;
-  border-radius: 12px;
-  background: #fafafa;
+.card,
+.stat-card,
+.form-section,
+.tips,
+.mood-preview {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 24px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
-.stats {
-  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+/* =========================
+   TEXT
+   ========================= */
+
+h1, h2, h3 {
+  font-weight: 600;
 }
 
-.features,
-.stats {
+p {
+  color: var(--text-secondary);
+}
+
+/* =========================
+   FORM
+   ========================= */
+
+form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-}
-
-/* QUOTE */
-.quote {
-  text-align: center;
-  font-style: italic;
-  color: #555;
-}
-
-/* FORM */
-.form-section form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
 
 input,
 select,
 textarea {
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+
+  border-radius: 10px;
+  border: 1px solid #ddd;
+
+  font-size: 14px;
 }
 
-.happy {
-  border-left: 4px solid #e0b973;
-}
-.sad {
-  border-left: 4px solid #7a9cc6;
-}
-.angry {
-  border-left: 4px solid #c46b6b;
-}
-.excited {
-  border-left: 4px solid #b48ead;
-}
-.tired {
-  border-left: 4px solid #999;
+textarea {
+  min-height: 100px;
 }
 
-button {
-  background: #1a1a1a;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 30px;
-  cursor: pointer;
-
-  transition: all 0.3s ease;
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid var(--accent);
 }
 
-button:hover {
-  background: #333;
-  transform: translateY(-2px);
+/* =========================
+   MOOD VISUALS
+   ========================= */
+
+.mood-card {
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  background: var(--surface);
 }
 
-/* RESULT BOX */
-#resultList {
-  margin-top: 15px;
+.mood-happy { border-left: 5px solid var(--happy); }
+.mood-sad { border-left: 5px solid var(--sad); }
+.mood-angry { border-left: 5px solid var(--angry); }
+.mood-excited { border-left: 5px solid var(--excited); }
+.mood-tired { border-left: 5px solid var(--tired); }
+
+/* =========================
+   SECTIONS
+   ========================= */
+
+.why {
+  max-width: 700px;
 }
 
-#resultList div {
-  background: white;
-  padding: 10px;
-  border-radius: 8px;
-  margin-bottom: 10px;
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
 
-/* FOOTER */
-footer {
+.quote {
   text-align: center;
-  margin: 40px 0;
-  font-size: 13px;
-  opacity: 0.7;
+  font-style: italic;
+  font-size: 1.1rem;
 }
 
-/* FADE IN ANIMATION */
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+/* =========================
+   ANIMATION
+   ========================= */
+
 section {
   opacity: 0;
   transform: translateY(20px);
-  animation: fadeIn 0.6s forwards;
+  animation: fadeUp 0.6s ease forwards;
 }
 
-@keyframes fadeIn {
+@keyframes fadeUp {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
   }
-  50% {
-    background-position: 100% 50%;
+
+  nav a {
+    margin: 0 10px;
   }
-  100% {
-    background-position: 0% 50%;
+
+  .hero h2 {
+    font-size: 2rem;
   }
 }
