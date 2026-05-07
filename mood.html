@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Mood|MoodSpace</title>
   </head>
   <body>
@@ -37,7 +37,7 @@
       <section class="form-section">
         <!-- user's form  -->
         <form id="moodForm">
-          <label>How are you feeling today?</label>
+          <label for="mood">How are you feeling today?</label>
           <select id="mood">
             <option value="">Select your mood</option>
             <option id="happy" value="Happy">Happy</option>
@@ -47,7 +47,7 @@
             <option id="tired" value="Tired">Tired</option>
           </select>
 
-          <label>note</label>
+          <label for="note">Note</label>
           <textarea id="note" placeholder="Pour your heart"></textarea>
 
           <button type="button" onclick="saveMood()">Save Mood</button>
