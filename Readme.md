@@ -139,7 +139,7 @@ Open `index.html` in your browser.
 
 ---
 
-## Author Information 👩🏽
+## Author Information 
 
 **Name:** Tania Unia Okoth
 
@@ -155,7 +155,7 @@ This project is licensed under the MIT License.
 
 ---
 
-## Acknowledgments 🤍
+## Acknowledgments 
 
 * Inspired by the importance of emotional self-awareness
 * Built using concepts from Foundations of Software Engineering
