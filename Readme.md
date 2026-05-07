@@ -1,98 +1,161 @@
-Mood Space
-Project Description
+# Mood Space 
 
-Mood Space is a web application that helps users track and reflect on their emotions simply and interactively. Many people experience mood changes daily but lack an easy way to monitor or understand them over time.
+## Project Description
 
-This application allows users to log their mood, add short notes, and view their emotional history. By combining user input with JavaScript functionality, the system transforms simple entries into meaningful insights.
+Mood Space is a web application that helps users track and reflect on their emotions in a simple and interactive way. Many people experience mood changes daily but lack an easy system to monitor or understand them over time.
 
-Problem Statement
+This application allows users to log their mood, add short notes, and view their emotional history. By combining user input with JavaScript functionality, the system transforms simple entries into meaningful self-reflection.
+
+---
+
+## Problem Statement
 
 Many individuals struggle to consistently track their emotions or identify patterns in their mood. Without a structured system, it becomes difficult to understand emotional triggers or personal well-being trends.
 
-Project Solution
+---
+
+## Project Solution
 
 Mood Space solves this problem by allowing users to:
 
-Input their mood through a simple form
-Add optional notes about how they feel
-Store their entries using localStorage
-View previously saved moods across different pages
+* Input their mood through a simple form
+* Add optional notes about how they feel
+* Store entries using localStorage
+* View previously saved moods across different pages
 
 This encourages self-awareness and helps users reflect on their emotional patterns over time.
 
-How It Works
-The user selects a mood and optionally writes a note
-JavaScript captures the input using DOM manipulation
-The data is stored in localStorage
-Other pages retrieve and display the stored data
-The interface updates dynamically based on user interaction
-Author Information
+---
 
-Name: Tania Unia Okoth
-Email: taniauniaokoth@gmail.com
+## How It Works
 
-GitHub: https://github.com/taniauniaokoth/MoodSpace
+1. The user selects a mood and optionally writes a note
+2. JavaScript captures the input using DOM manipulation
+3. The data is stored in localStorage
+4. Other pages retrieve and display the stored data
+5. The interface updates dynamically based on user interaction
 
-Setup Instructions
-Prerequisites
-A modern web browser (Chrome, Edge, Safari, etc.)
-Installation
-Clone the repository:
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
-Navigate into the folder:
-cd mood-space
-Open the project:
-Open index.html in your browser
-BDD (Behavior-Driven Development)
-Feature: Mood Tracking
+---
 
-Scenario 1: User submits a mood successfully
+## Features 
 
-Given the user is on the input page
-When they select a mood and submit
-Then the mood is saved and displayed
+* User-friendly interface
+* Mood logging system
+* Personal reflection notes
+* Dynamic updates using JavaScript
+* Form validation and error handling
+* Data persistence using localStorage
+* Responsive design
+* Multiple linked pages
+* Interactive UI animations
 
-Scenario 2: User submits without selecting a mood
+---
 
-Given the user is on the form
-When they click submit without input
-Then an error message is displayed
+## BDD (Behavior-Driven Development)
 
-Scenario 3: Data persists across pages
+### Feature: Mood Tracking
 
-Given the user has entered mood data
-When they navigate to another page
-Then the stored moods are displayed
-Technologies Used
-HTML5
-CSS3
-JavaScript (DOM manipulation, event handling)
-localStorage
-Project Structure
+#### Scenario 1: User submits a mood successfully
+
+**Given** the user is on the input page
+**When** they select a mood and submit
+**Then** the mood is saved and displayed
+
+---
+
+#### Scenario 2: User submits without selecting a mood
+
+**Given** the user is on the form
+**When** they click submit without input
+**Then** an error message is displayed
+
+---
+
+#### Scenario 3: Data persists across pages
+
+**Given** the user has entered mood data
+**When** they navigate to another page
+**Then** the stored moods are displayed
+
+---
+
+## Technologies Used 
+
+* HTML5
+* CSS3
+* JavaScript
+* DOM Manipulation
+* Event Handling
+* localStorage API
+
+---
+
+## Project Structure
+
+```bash
 mood-space/
 │
-├── index.html        # Main page (input form)  
-├── history.html      # Displays saved moods  
-├── insights.html     # Shows mood patterns  
-├── style.css         # Styling  
-├── script.js         # JavaScript logic  
-└── README.md         # Documentation  
-Features
-User-friendly interface
-Form validation and error handling
-Dynamic updates using JavaScript
-Data persistence using localStorage
-Multiple linked pages
-Contact Information
+├── index.html        # Homepage
+├── about.html        # About page
+├── mood.html         # Mood input page
+├── result.html       # Displays saved moods
+├── style.css         # Styling
+├── script.js         # JavaScript functionality
+└── README.md         # Documentation
+```
 
-Email: taniauniaokoth@gmail.com
+---
 
-GitHub: https://github.com/taniauniaokoth/MoodSpace
+## Setup Instructions
 
-License
+### Prerequisites
+
+* A modern web browser (Chrome, Edge, Safari, Firefox)
+
+### Installation
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/taniauniaokoth/MoodSpace.git
+```
+
+2. Navigate into the project folder
+
+```bash
+cd MoodSpace
+```
+
+3. Open the project
+
+Open `index.html` in your browser.
+
+---
+
+## Known Issues
+
+* Mood data is stored locally on the browser only
+* No cloud/database integration yet
+
+---
+
+## Author Information 👩🏽
+
+**Name:** Tania Unia Okoth
+
+**Email:** [taniauniaokoth@gmail.com]
+
+**GitHub:** https://github.com/taniauniaokoth/MoodSpace
+
+---
+
+## License
 
 This project is licensed under the MIT License.
 
-Acknowledgments
-Inspired by the need for simple emotional tracking tools
-Built using concepts from Foundations of Software Engineering
+---
+
+## Acknowledgments 🤍
+
+* Inspired by the importance of emotional self-awareness
+* Built using concepts from Foundations of Software Engineering
